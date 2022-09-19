@@ -1,0 +1,18 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.konteiner {
+    display: flex;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.selected {
+    background-color: red;
+}

@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.hed {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border-bottom: solid black;
+}
+.sex69 {
+    height: 145px;
+    width: 100%;
+    background-color: orange;
+    font-size: 31px;
+    opacity: 0;
+}
+li {
+    border-bottom: solid black;
+    padding-top: 10px;
+}

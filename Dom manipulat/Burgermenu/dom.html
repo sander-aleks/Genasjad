@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="hed">
+    <h1>Suss</h1>
+    <h1 class="but" id="kristo">M</h1> 
+</div>
+<div class="sex69" id="kristo1">
+    <li>options</li>
+    <li>settingud</li>
+    <li>Geni muusika</li>
+</div>
+<script>
+    const X = document.getElementById("kristo");
+    var x2 = 0;
+    const X1 = document.getElementById("kristo1");
+    X.onclick = function() { 
+        x2 += 1
+        if(x2 == 1) {
+            X.innerText = "X"
+            X1.style.opacity = 100
+        }
+        else if(x2 == 2) {
+            X.innerText = "M"
+            X1.style.opacity = 0
+            x2 = 0 
+        }
+    }
+</script>
+
+</body>
+</html>
