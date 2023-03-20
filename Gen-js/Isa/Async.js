@@ -12,26 +12,26 @@
 })();*/
 
 
-async function getProductsData() {
-    const response = await fetch('https://dummyjson.com/products');
-    const { products } = await response.json();
-    console.log(products);
-    return products;
+async function getProductsData() { // Defineerin asünkroonse funktsiooni nimega getProductsData. 
+    const response = await fetch('https://dummyjson.com/products'); // defineerin muutuja nimega response, ootan vastuse API päringusse ja salvestan muutujasse response
+    const { products } = await response.json(); // Ootame kuni response muudetakse JSON formaati ning võtame response seest 'key' nimega products ja salvestame samanimelisse muutujasse
+    console.log(products); // console logib products data
+    return products; // tagastab muutuja products
 }
 getProductsData();
 
-async function getProductsCategories(){
-    const response = await fetch('https://dummyjson.com/products/categories');
-    const categories = await response.json();
-    console.log(categories);
-    return categories;
+async function getProductsCategories(){ // Defineerin asünkroonse funktsiooni nimega getProductsCategories. 
+    const response = await fetch('https://dummyjson.com/products/categories'); // defineerin muutuja nimega response, ootan vastuse ja salvestan muutujasse response
+    const categories = await response.json(); // Ootame kuni response muudetakse JSON formaati ning võtame response seest 'key' nimega categories ja salvestame samanimelisse muutujasse
+    console.log(categories); // console logib categories
+    return categories; // tagastab muutuja categories
 }
 getProductsCategories();
 
-async function createCategoryButtons(){
-    const categories = await getProductsCategories();
+async function createCategoryButtons(){ // Defineerin asünkroonse funktsiooni nimega createCategoryButtons. 
+    const categories = await getProductsCategories(); // Defineerin muutuja nimega categories siis käivitan getProductCategories ja ootan vastust 
 
-    const categoryList = document.querySelector('.category-list');
+    const categoryList = document.querySelector('.category-list'); // Defineerin muutuja mimega categoryList ja defineerin querySelectoriga cssi category-list
 
     categories.forEach(category => {
         const button = document.createElement('button');
